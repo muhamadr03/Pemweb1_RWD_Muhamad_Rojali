@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container" style="max-width: 600px; margin: auto;">
+        <div class="card mt-5" style="border: 1px solid lightgray;">
+            <h2 class="card-title text-center p-3" style="background-color: rgb(190, 191, 191); margin: 0;">Registrasi Seminar</h2>
+            <div class="card-body">
+                <form style="padding: 10px;">
+                    <div class="form-group row">
+                        <label for="nama" class="col-md-4 col-form-label">Nama Lengkap</label> 
+                        <div class="col-md-8">
+                            <input id="nama" name="nama" placeholder="Masukkan Nama Lengkap" type="text" required class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="tempat-lahir" class="col-md-4 col-form-label">Tempat Lahir</label> 
+                        <div class="col-md-8">
+                            <input id="tempat-lahir" name="tempat-lahir" placeholder="Masukkan Tempat Lahir Anda" type="text" required class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="tanggal-lahir" class="col-md-4 col-form-label">Tanggal Lahir</label> 
+                        <div class="col-md-8">
+                            <input id="tanggal-lahir" name="tanggal-lahir" type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-4">Gender</label> 
+                        <div class="col-md-8">
+                            <div class="form-check form-check-inline">
+                                <input name="gender" id="gender_0" type="radio" class="form-check-input" value="Laki-laki" checked> 
+                                <label for="gender_0" class="form-check-label">Laki-laki</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input name="gender" id="gender_1" type="radio" class="form-check-input" value="Perempuan"> 
+                                <label for="gender_1" class="form-check-label">Perempuan</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-4 col-form-label">Email</label> 
+                        <div class="col-md-8">
+                            <input id="email" name="email" placeholder="contoh123@gmail.com" type="email" required class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="select" class="col-md-4 col-form-label">Kategori Peserta</label> 
+                        <div class="col-md-8">
+                            <select id="select" name="select" class="form-control">
+                                <option value="Mahasiswa">Mahasiswa</option>
+                                <option value="Umum">Umum</option>
+                                <option value="Pelajar">Pelajar</option>
+                            </select>
+                        </div>
+                    </div> 
+                    <div class="form-group row">
+                        <div class="offset-md-4 col-md-8">
+                            <button name="submit" type="submit" class="btn btn-primary">Daftar</button>
+                        </div>
+                    </div>
+                </form>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
